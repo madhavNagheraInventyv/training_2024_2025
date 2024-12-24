@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion with Logo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section (Logo) -->
+    <div class="left-section">
+      <img src="C:\Users\Admin\Desktop\training_2024_2025-main (1)\training_2024_2025-main\Task1\images\download.png" alt="Logo">
+    </div>    
+
+    <!-- Right Section (Login and Register Accordion) -->
+    <div class="right-section">
+      <div class="accordion-wrapper">
+        <!-- Login Section -->
+        <details class="accordion" id="login-accordion">
+          <summary class="accordion-header">Login</summary>
+          <div class="accordion-content-login">
+            <div class="form">
+              <input type="text" name="username" placeholder="Username" class="inputField">
+              <input type="password" name="password" placeholder="Password" class="inputField">
+              <button class="cta">Login</button>
+            </div>
+          </div>
+        </details>
+
+        <!-- Register Section -->
+        <details class="accordion" id="register-accordion">
+          <summary class="accordion-header">Register</summary>
+          <div class="accordion-content-register">
+            <div class="form">
+              <input type="text" name="username" placeholder="Username" class="inputField">
+              <input type="email" name="email" placeholder="Email" class="inputField">
+              <input type="password" name="password" placeholder="Password" class="inputField">
+              <button class="cta">Register</button>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

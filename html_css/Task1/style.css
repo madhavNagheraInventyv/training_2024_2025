@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Section (Logo) */
+.left-section {
+  width: 80%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right Section (Accordion) */
+.right-section {
+  width: 20%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+/* Flexbox for Accordion */
+.accordion-wrapper {
+  display: flex;
+  gap: 20px;  /* Space between the two sections */
+  width: 100%;
+}
+
+/* Accordion */
+.accordion {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #eee;
+  padding: 0;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Accordion Header */
+.accordion-header {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background-color: #ccc;
+}
+
+/* Accordion Content */
+.accordion-content-login,
+.accordion-content-register {
+  padding: 10px;
+  display: none;
+  background-color: #f9f9f9;
+  visibility: hidden; /* Hide content initially */
+  opacity: 0; /* Make content invisible initially */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Show content when accordion is open */
+details[open] .accordion-content-login {
+  display: block;
+  visibility: visible; /* Ensure visibility when open */
+  opacity: 1; /* Make visible */
+}
+
+details[open] .accordion-content-register {
+  display: block;
+  visibility: visible; /* Ensure visibility when open */
+  opacity: 1; /* Make visible */
+}
+
+/* Hide the content and borders of the other section when one is open */
+details[open] ~ details .accordion {
+  visibility: hidden; /* Hide the other section's border and content */
+  opacity: 0; /* Make the other section invisible */
+}
+
+details[open] ~ details .accordion-content-login,
+details[open] ~ details .accordion-content-register {
+  visibility: hidden; /* Hide the other section's content */
+  opacity: 0; /* Make it invisible */
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cta {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cta:hover {
+  background-color: #45a049;
+}
+
+/* Ensuring one section opens and the other closes */
+details:not([open]) .accordion-content-login,
+details:not([open]) .accordion-content-register {
+  display: none !important; /* Force hide content when not open */
+  visibility: hidden !important; /* Force visibility to hidden when not open */
+  opacity: 0 !important; /* Force opacity to 0 when not open */
+}
