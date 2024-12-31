@@ -18,9 +18,12 @@ Maintain clear documentation for each project and the main folder (e.g., README.
 # file structure #
 ```
 |-html_css
-    |-Task1
-    |-Task2
- 
+|    |-Task1
+|    |-Task2
+|
+|-js
+  |-task1
+  |-task2
 ```    
 
 

@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f4fa; /* Light Blueish Background */
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Left Section (Company Details) */
+  .col-lg-9 {
+    background-color: #0056b3; /* Primary Blue */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .col-lg-9 img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .col-lg-9 h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .col-lg-9 p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Sidebar Section */
+  .sidebar {
+    background-color: #f0f4fa; /* Light Blueish Background */
+    color: #0056b3; /* Primary Blue Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 340px;
+    padding: 20px;
+  }
+  
+  /* Tabs */
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: #0056b3; /* Blue Text */
+    font-weight: bold;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: #0056b3; /* Active Tab Background */
+    color: white; /* Active Tab Text */
+    border-color: #0056b3 white white; /* Tab Borders */
+  }
+  
+  .nav-tabs .nav-link:hover {
+    color: #003d80; /* Slightly Darker Blue for Hover */
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    padding: 20px;
+  }
+  
+  .tab-pane h3 {
+    color: #0056b3; /* Blue Heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form .form-control {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .form .form-control:focus {
+    outline: none;
+    border-color: #0056b3; /* Focus Border */
+    box-shadow: 0 0 4px rgba(0, 86, 179, 0.5);
+  }
+  
+  .form small {
+    font-size: 0.9rem;
+    color: #777; /* Gray Text for Small */
+  }
+  
+  .form .btn {
+    background-color: #0056b3; /* Blue Button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .form .btn:hover {
+    background-color: #003d80; /* Darker Blue for Hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .col-lg-9 {
+      display: none; /* Hide Left Section on Small Screens */
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+  }
+  

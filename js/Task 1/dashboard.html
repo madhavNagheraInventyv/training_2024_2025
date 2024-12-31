@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 20%;
+      }
+      #elapsed-time {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Dashboard</h1>
+    <p id="elapsed-time">Elapsed Time: 0 seconds</p>
+    <p>You will be redirected after 42 seconds if your session expires.</p>
+    <button id="stop-session">Stop Session</button>
+
+    <script>
+      // Check session on page load
+      window.onload = function () {
+        const sessionStartTime = localStorage.getItem("sessionStartTime");
+
+        if (!sessionStartTime) {
+          alert("Session expired. Redirecting to login.");
+          window.location.href = "/test.html";
+          return;
+        }
+
+        const sessionDuration = 42000; 
+        const startTime = parseInt(sessionStartTime, 10);
+
+        // Update elapsed time every second
+        const updateElapsedTime = () => {
+          const currentTime = Date.now();
+          const elapsedTimeInMs = currentTime - startTime;
+          const elapsedTimeInSec = Math.floor(elapsedTimeInMs / 1000);
+          document.getElementById("elapsed-time").innerText = `Elapsed Time: ${elapsedTimeInSec} seconds`;
+
+          // Redirect if session expires
+          if (elapsedTimeInMs >= sessionDuration) {
+            alert("Session expired. Redirecting to Test page.");
+            window.location.href = "C:\\Users\\Admin\\Desktop\\training_2024_2025-main (1)\\training_2024_2025-main\\js\\Task 1\\test.html";
+          }
+        };
+
+        // Start interval for elapsed time updates
+        setInterval(updateElapsedTime, 1000);
+
+        // Set a timeout to redirect when the session expires
+        setTimeout(() => {
+          alert("Session expired. Redirecting to Test page.");
+          window.location.href = "C:\\Users\\Admin\\Desktop\\training_2024_2025-main (1)\\training_2024_2025-main\\js\\Task 1\\test.html";
+        }, sessionDuration);
+
+        // Stop session button functionality
+        const stopSessionButton = document.getElementById("stop-session");
+        stopSessionButton.addEventListener("click", () => {
+         // alert("Session stopped by user. Redirecting to Test page.");
+         localStorage.removeItem("username");
+         localStorage.removeItem("email");
+         localStorage.removeItem("password");
+
+          window.location.href = "C:\\Users\\Admin\\Desktop\\training_2024_2025-main (1)\\training_2024_2025-main\\js\\Task 1\\test.html";
+
+        });
+      };
+    </script>
+  </body>
+</html>

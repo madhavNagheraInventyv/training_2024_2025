@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>login register bootstrap</title>
+    <style>
+    </style>
+  </head>
+  <body class="bg-light vh-100 d-flex">
+    <div class="container-fluid h-100 d-flex">
+      <!-- Company Details Section (80%) -->
+      <div
+        class="col-lg-9 gap-2 bg-success bg-opacity-10 d-flex flex-column justify-content-center align-items-center text-center p-4"
+      >
+        <img src="C:\Users\Admin\Desktop\training_2024_2025-main (1)\training_2024_2025-main\js\Task 1\images\download.png" alt="Company Logo" class="mb-3" style="width: 150px; height: auto"
+        />
+        <h1 class="text-success">Welcome to Our Platform</h1>
+        <p class="text-success fs-5">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+      <div
+        class="sidebar col-lg-3 bg-success text-white d-flex justify-content-center align-items-center p-4">
+        <div class="card custom-card text-white w-100 p-3" style="max-width: 340px">
+          <!-- Tabs -->
+          <ul class="nav nav-tabs nav-justified mb-3">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="login-tab"
+                data-bs-toggle="tab"
+                href="#login"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="register-tab"
+                data-bs-toggle="tab"
+                href="#register"
+                >Register</a
+              >
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <div id="login" class="tab-pane fade show p-1 active">
+              <h3 class="text-center">Login</h3>
+              <form class="d-flex flex-column gap-3" onsubmit="login(event)">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  required
+                  id="login-username"
+                />
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  id="login-password"
+                  required
+                  
+                />
+                <small class="text-light"
+                  >Do not have an account? Register</small
+                >
+                <button type="submit" class="btn btn-light" >Login</button>
+              </form>
+            </div>
+
+            <div id="register" class="tab-pane fade p-1">
+              <h3 class="text-center">Register</h3>
+              <form class="d-flex flex-column gap-3" onsubmit="register(event)">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  id="username"
+                  required
+                />
+                <input
+                  type="text" class="form-control"
+                  placeholder="Email"
+                  id="email"
+                
+                />
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                  id="password";
+                 
+                />
+                <small class="text-light">Already have an account? Login</small>
+                <button type="submit" class="btn btn-light" >Sign Up</button>
+              </form>
+              <script>
+                // Register Function
+                function register(event) {
+                  event.preventDefault(); 
+                  const username = document.getElementById("username").value;
+                  const email = document.getElementById("email").value;
+                  const password = document.getElementById("password").value;
+              
+    //local storage
+                  localStorage.setItem("username", username);
+                  localStorage.setItem("email", email);
+                  localStorage.setItem("password", password);
+              
+                  alert("Registration successful! You can now log in.");
+                }
+              
+                // Login Function
+                function login(event) {
+                  event.preventDefault(); // Prevent form submission
+                  const username = document.getElementById("login-username").value;
+                  const password = document.getElementById("login-password").value;
+              
+                  // Fetch user details from local storage
+                  const storedUsername = localStorage.getItem("username");
+                  const storedPassword = localStorage.getItem("password");
+                  console.log("fetched");
+              
+                  // Validate login credentials
+                  if (username === storedUsername && password === storedPassword) {
+                    alert("Login successful!");
+                    localStorage.setItem("sessionStartTime", Date.now());
+                    window.location.href = "file:///C:/Users/Admin/Desktop/training_2024_2025-main (1)/training_2024_2025-main/js/Task%201/dashboard.html";
+
+                  } else {
+                    alert("Invalid username or password!");
+                  }
+                }
+              </script>
+
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
