@@ -22,8 +22,25 @@ Maintain clear documentation for each project and the main folder (e.g., README.
 |    |-Task2
 |
 |-js
-  |-task1
-  |-task2
+|  |-task1
+|  |-task2
+|   
+|-flowcharts
+|       |── areaofcircle.js
+        ├── Factorialofn.js
+        ├── maxamongX&Y&Zz.js
+        ├── maxamonfX&Y.js
+        ├── parameterOfRectangle.js
+        ├── print1to5.js
+        ├── series.js
+        ├── series2.js
+        ├── series3.js
+        ├── factorialseries.js
+        ├── factorialseries1.js
+        ├── sinx.js
+        ├── sumOf_n.js
+        └── README.md
+
 ```    
 
 
