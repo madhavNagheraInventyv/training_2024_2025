@@ -1,0 +1,9 @@
+[package]
+name = "Madhav-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio={ version = "1.43.0", feature = ["full"], features = ["full"] }
+serde={version="1.0.217", feature=["derive"]}
+rand="0.8"
