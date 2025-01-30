@@ -1,0 +1,113 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "calculate-the-area-of-a-circle;valid-radius-input",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Valid radius input",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the calculator page",
+            "match": {
+              "location": "tests\\step_definitions\\circle.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1277415100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter radius \"5\" and press calculate",
+            "match": {
+              "location": "tests\\step_definitions\\circle.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1072176899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see the area displayed as \"78.54\"",
+            "match": {
+              "location": "tests\\step_definitions\\circle.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 782931799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "calculate-the-area-of-a-circle;invalid-radius-input",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Invalid radius input",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I open the calculator page",
+            "match": {
+              "location": "tests\\step_definitions\\circle.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377054199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I enter radius \"-5\" and press calculate",
+            "match": {
+              "location": "tests\\step_definitions\\circle.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1053754000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see an error message",
+            "match": {
+              "location": "tests\\step_definitions\\circle.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 761643399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "calculate-the-area-of-a-circle",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Calculate the area of a circle",
+    "tags": [],
+    "uri": "features\\circle.feature"
+  }
+]
