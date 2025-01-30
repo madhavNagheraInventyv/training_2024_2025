@@ -45,9 +45,30 @@ Maintain clear documentation for each project and the main folder (e.g., README.
 |        |-Madhav-rust
 |        |        |-src
 |        |           |-levels     
-|        |
-|        |
-
+|        
+|        
+|- Circle_area_app
+|        |──features/                           #the gherkin file for the project
+|        ├── node_modules/                      # Project dependencies
+|        |        |--circle.feature
+|        ├── public/                            #Front-end
+|        |        ├── index.html                # The main HTML file for the app
+|        |        ├── script.js                 # The JavaScript file containing the app logic
+|        |        └── style.css                 # The CSS file for styling the app
+|        |                  
+|        ├── test-results/                      # Folder for storing test results
+|        |        |──.last.run.json
+|        ├── tests/                             # Folder containing feature files and step definitions for Cucumber
+|        |        |──step_definitions/
+|        |        |        |--circle.steps.js
+|        |        |──playwright.test.js
+|        |        |──README.md
+|        ├── cucumber.js                        # Cucumber configuration file
+|        ├── package-lock.json                  # Lock file for npm dependencies
+|        ├── package.json                       # Project metadata and dependencies
+|        ├── playwright.config.js               # Playwright configuration file
+|        ├── README.md                          # This file
+|        └── server.js                          # Node.js server to run the app
 
       
 ```    
