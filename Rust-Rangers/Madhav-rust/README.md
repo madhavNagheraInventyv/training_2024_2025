@@ -131,24 +131,24 @@ rust_rangers/
 │   ├── main.rs        # The main entry point for the game
 │   ├── levels/
 │   │   ├── mod.rs     # Level loader (manages the modules for each level)
-│   │   ├── _1_level_one.rs  # Forest of Variables
-│   │   ├── _2_level_two.rs  # Loops of the River
-│   │   ├── _3_level_three.rs  # Mountains of Memory
-│   │   ├── _4_level_four.rs  # Dark Mines of Errors
-│   │   ├── _5_level_five.rs  # Fields of Structs and Enums
-│   │   ├── _6_level_six.rs  # Caverns of Traits
-│   │   ├── _7_level_seven.rs  # The Multithreaded Mountain
-│   │   ├── _8_level_eight.rs  # The Plains of Generics
-│   │   ├── _9_level_nine.rs  # The Valley of Lifetimes
-│   │   ├── _10_level_ten.rs # The Forest of Patterns
-│   │   ├── _11_level_eleven.rs # Caverns of Smart Pointers
-│   │   ├── _12_level_twelve.rs # The Peaks of Macros
-│   │   ├── _13_level_thirteen.rs # The Depths of Unsafe Rust
-│   │   ├── _14_level_fourteen.rs # The Async Cliffs
-│   │   ├── _15_level_fifteen.rs # The Serde Valley
-│   │   ├── _16_level_sixteen.rs # The API Mountains
-│   │   ├── _17_level_seventeen.rs # The Fields of Errors
-│   │   ├── _18_level_eighteen.rs # The Summit of WebAssembly
+│   │   ├── level_1.rs  # Forest of Variables
+│   │   ├── level_2.rs  # Loops of the River
+│   │   ├── level_3.rs  # Mountains of Memory
+│   │   ├── level_4.rs  # Dark Mines of Errors
+│   │   ├── level_5.rs  # Fields of Structs and Enums
+│   │   ├── level_6.rs  # Caverns of Traits
+│   │   ├── level_7.rs  # The Multithreaded Mountain
+│   │   ├── level_8.rs  # The Plains of Generics
+│   │   ├── level_9.rs  # The Valley of Lifetimes
+│   │   ├── level_10.rs # The Forest of Patterns
+│   │   ├── level_11.rs # Caverns of Smart Pointers
+│   │   ├── level_12.rs # The Peaks of Macros
+│   │   ├── level_13.rs # The Depths of Unsafe Rust
+│   │   ├── level_14.rs # The Async Cliffs
+│   │   ├── level_15.rs # The Serde Valley
+│   │   ├── level_16.rs # The API Mountains
+│   │   ├── level_17.rs # The Fields of Errors
+│   │   ├── level_18.rs # The Summit of WebAssembly
 ├── Cargo.toml         # Rust project configuration
 ├── README.md          # This file (for GitHub)
 ```
