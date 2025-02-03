@@ -69,6 +69,25 @@ Maintain clear documentation for each project and the main folder (e.g., README.
 |        ├── playwright.config.js               # Playwright configuration file
 |        ├── README.md                          # This file
 |        └── server.js                          # Node.js server to run the app
+|- Test_middleware-api-rust/
+|         │   
+|         ├── middleware_axum/                   #Contains the Axum API with request counting middleware.       
+|         │   │   ├── main.rs
+|         │   ├── Cargo.toml
+|         ├── test_api/                          #A simple API endpoint (`/api/test`) that logs a message when accessed.
+|         │   ├── src/
+|         │   │   ├── main.rs
+|         │   ├── Cargo.toml
+|         ├── test_api2/            #API that handles a `user/{id}` route, returning a JSON response based on the `id`.
+|         │   ├── src/
+|         │   │   ├── main.rs
+|         │   ├── Cargo.toml
+|         ├── README.md
+   
+
+
+
+
 
       
 ```    
