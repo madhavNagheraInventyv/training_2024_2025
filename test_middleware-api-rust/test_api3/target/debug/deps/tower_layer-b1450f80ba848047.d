@@ -1,0 +1,9 @@
+C:\Users\Admin\Documents\training_2024_2025\test_middleware-api-rust\test_api3\target\debug\deps\libtower_layer-b1450f80ba848047.rmeta: C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\lib.rs C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\identity.rs C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\layer_fn.rs C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\stack.rs C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\tuple.rs
+
+C:\Users\Admin\Documents\training_2024_2025\test_middleware-api-rust\test_api3\target\debug\deps\tower_layer-b1450f80ba848047.d: C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\lib.rs C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\identity.rs C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\layer_fn.rs C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\stack.rs C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\tuple.rs
+
+C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\lib.rs:
+C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\identity.rs:
+C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\layer_fn.rs:
+C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\stack.rs:
+C:\Users\Admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tower-layer-0.3.3\src\tuple.rs:

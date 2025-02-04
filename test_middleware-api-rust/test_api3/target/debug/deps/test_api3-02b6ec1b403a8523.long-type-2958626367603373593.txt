@@ -1,0 +1,1 @@
+fn(axum::extract::Path<std::string::String>, Arc<AppState>) -> impl Future<Output = ()> {get_user}

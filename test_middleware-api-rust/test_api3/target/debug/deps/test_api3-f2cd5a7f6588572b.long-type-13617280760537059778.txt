@@ -1,0 +1,1 @@
+fn(axum::Json<CreateUserPayload>, Arc<AppState>) -> impl Future<Output = axum::Json<User>> {create_user}
