@@ -48,7 +48,7 @@ npx playwright install
 
 The project directory has the following structure:
 
-```
+```bash
 circle_area_app/
     |──features/                           #the gherkin file for the project
     |        |--circle.feature
