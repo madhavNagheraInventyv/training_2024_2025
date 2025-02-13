@@ -1,0 +1,10 @@
+pub mod hello_world;
+pub mod fn1;
+pub mod fn2_json_body;
+pub mod fn3_path_variable;
+pub mod fn4_query_parameter;
+pub mod fn5_always_error;
+pub mod fn6_status200;
+pub mod fn7_getjson;
+pub mod fn8_validateserde;
+pub mod fn9_extractjson;
