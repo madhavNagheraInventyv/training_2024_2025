@@ -1,0 +1,8 @@
+[package]
+name = "polars"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polars = { version = "0.46.0", features = ["lazy", "csv", "dtype-categorical", "temporal", "dtype-date"] }
+chrono = { version = "0.4.39", features = ["serde"] }
